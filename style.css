@@ -66,8 +66,9 @@ nav a:hover, nav a[aria-current="page"] { color: var(--accent); text-decoration:
 .hero {
   background: var(--band);
   border-bottom: 1px solid var(--rule);
-  padding: 52px 0 44px;
+  padding: 0 0 44px;
 }
+.hero header { justify-content: flex-end; padding: 22px 0 30px; }
 .hero h1 {
   font-size: 2.6rem;
   font-weight: 600;
@@ -101,7 +102,8 @@ main { padding: 44px 0 64px; }
 }
 .intro p:first-child { margin-top: 0; }
 @media (max-width: 680px) {
-  .hero { padding: 36px 0 30px; }
+  .hero { padding: 0 0 30px; }
+  .hero header { justify-content: flex-start; padding-bottom: 22px; }
   .hero h1 { font-size: 2rem; }
   .intro { grid-template-columns: 1fr; gap: 28px; }
   .intro img { max-width: 220px; }
